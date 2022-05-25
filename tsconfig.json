@@ -1,15 +1,32 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "jsx": "react",
-    "types": ["vite/client", "node"],
+    "types": ["vite/client", "node", "jest"],
+    "target": "es6",
+    "lib": ["dom", "esnext"],
+    "skipLibCheck": true,
     "strict": true,
-    "skipLibCheck": false,
     "module": "esnext",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "noImplicitOverride": true,
     "esModuleInterop": true,
-    "noEmit": true
+    "importHelpers": true,
+    "removeComments": false,
+    "allowJs": false,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "baseUrl": "",
+    "paths": {}
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "out"]
+  "exclude": ["node_modules", "dist"],
+  "files": ["jest.config.ts", "vite.config.ts"],
+  "include": ["src"]
 }

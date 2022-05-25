@@ -12,8 +12,9 @@
 .yarnrc
 
 # locks
-package-lock.json
-yarn.lock
+# pnpm-lock.yaml
+# package-lock.json
+# yarn.lock
 
 # logs
 npm-debug.log

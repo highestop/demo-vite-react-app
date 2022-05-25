@@ -3,6 +3,13 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  root: 'src',
+  build: {
+    outDir: '../dist'
+  },
+  server: {
+    https: true,
+  },
   plugins: [reactRefresh()],
   /**
    * [plugin:vite:css] '~antd/dist/antd.less' wasn't found.

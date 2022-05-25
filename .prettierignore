@@ -1,4 +1,13 @@
 node_modules/
 dist/
+out/
 .git/
+.gitignore
+.npmignore
+.dockerignore
+.prettierignore
+.editorconfig
+.eslintignore
 *.md
+CNAME
+LICENSE
