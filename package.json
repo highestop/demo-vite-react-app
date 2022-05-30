@@ -7,8 +7,8 @@
   },
   "private": true,
   "engines": {
-    "node": ">=16",
-    "pnpm": ">=5"
+    "node": "=16",
+    "pnpm": "=7"
   },
   "scripts": {
     "start": "vite",

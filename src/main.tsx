@@ -1,7 +1,7 @@
 import './styles/global.less'
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import { App } from './app/App'
 
@@ -11,11 +11,11 @@ if (container) {
 
   root.render(
     <React.StrictMode>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
-          <Route element={<App />} />
+          <Route index element={<App />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </React.StrictMode>
   )
 }
