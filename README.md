@@ -1,8 +1,5 @@
-# demo-react-app-vite
+# demo-vite-react-app
 
 ```
-pnpm install
-pnpm run lint
-pnpm run test
-pnpm run build
+pnpm i; & lint; & test; & build
 ```
