@@ -1,25 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
-/dist
-/out
-
-# dependencies
-/node_modules
-
-# registry
-.npmrc
-.yarnrc
-
-# locks
-# pnpm-lock.yaml
-# package-lock.json
-# yarn.lock
-
-# logs
-npm-debug.log
-yarn-error.log
-
-# system
 .DS_Store
-Thumbs.db
+.idea
+node_modules
+dist
+out
