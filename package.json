@@ -1,7 +1,7 @@
 {
-  "name": "demo-react-app-vite",
-  "packageManager": "pnpm@7.3.0",
+  "name": "demo-vite-react-app",
   "version": "0.0.0",
+  "packageManager": "pnpm@7.3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/highestop/demo-react-app-vite.git"
