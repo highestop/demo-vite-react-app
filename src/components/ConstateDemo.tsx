@@ -2,7 +2,7 @@ import constate from 'constate/dist/ts/src'
 import React, { useEffect, useState } from 'react'
 import { useEffectLog } from 'src/hooks/advancedHooks'
 
-export function Constate() {
+export function App() {
   useEffectLog('context')
   const [foo, setFoo] = useState(true)
   return (
