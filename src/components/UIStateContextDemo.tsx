@@ -1,10 +1,6 @@
 import constate from 'constate/dist/ts/src'
 import React, { Dispatch, SetStateAction, useState } from 'react'
 
-export const App = () => {
-  return <Outer></Outer>
-}
-
 // 字段
 export enum UIState {
     PopupState = 'popupState',
@@ -76,18 +72,6 @@ export const useGetState = <T extends UIState>(key: T) => UIGetState[key]()
 export const useSetState = <T extends UIState>(key: T) => UISetState[key]()
 
 // 在组件中使用
-function Outer() {
-  console.log('render outer')
-
-  return (
-    <UIStateProvider>
-      <Operator></Operator>
-      <ShowSomeState></ShowSomeState>
-      <ShowAnotherState></ShowAnotherState>
-    </UIStateProvider>
-  )
-}
-
 function Operator() {
   const updateSomeState = useSetState(UIState.SomeState)
   console.log('render operator')
@@ -104,4 +88,20 @@ function ShowAnotherState() {
   const anotherState = useGetState(UIState.AnotherState)
   console.log('render show another')
   return <p>anotherState: {anotherState}</p>
+}
+
+function Outer() {
+  console.log('render outer')
+
+  return (
+    <UIStateProvider>
+      <Operator></Operator>
+      <ShowSomeState></ShowSomeState>
+      <ShowAnotherState></ShowAnotherState>
+    </UIStateProvider>
+  )
+}
+
+export const App = () => {
+  return <Outer></Outer>
 }
